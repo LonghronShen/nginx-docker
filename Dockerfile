@@ -1,6 +1,6 @@
 FROM ubuntu:16.04
 
-ADD nginx-full_1.13.5-0ubuntu0.16.04.4_amd64.deb /app
+ADD . /app
 
 RUN apt-get update \
 	&& apt-get install --no-install-recommends --no-install-suggests -y libgd3 libxslt1.1 libvpx3 libxpm4 \
