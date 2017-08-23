@@ -3,7 +3,7 @@ FROM ubuntu:16.04
 ADD . /app
 
 RUN apt-get update \
-	&& apt-get install --no-install-recommends --no-install-suggests -y libgd3 libxslt1.1 libvpx3 libxpm4 \
+	&& apt-get install --no-install-recommends --no-install-suggests -y libgd3 libxslt1.1 libvpx3 libxpm4 libgeoip1 libssl1.0.0 \
 	&& rm -rf /var/lib/apt/lists/*
 
 WORKDIR /app
